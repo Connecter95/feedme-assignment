@@ -1,0 +1,59 @@
+/* ─── Order Card ──────────────────────────────────────────────────────────── */
+.order-card {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border-left: 4px solid;
+  animation: slideIn 0.2s ease;
+}
+
+.card-normal {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.card-vip {
+  background: #2d2208;
+  border-color: #FFC72C;
+}
+
+.card-complete {
+  background: #052e16;
+  border-color: #22c55e;
+}
+
+/* ─── Bot Card ────────────────────────────────────────────────────────────── */
+.bot-card {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid #2a2a2a;
+}
+
+.bot-idle {
+  background: #1a1a1a;
+  opacity: 0.6;
+}
+
+.bot-active {
+  background: #0c1a2e;
+  border-color: #1e40af;
+}
+
+/* ─── Progress Bar ────────────────────────────────────────────────────────── */
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1d4ed8, #3b82f6);
+  border-radius: 3px;
+  transition: width 0.1s linear;
+}
+
+/* ─── Animations ──────────────────────────────────────────────────────────── */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

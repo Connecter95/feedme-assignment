@@ -1,0 +1,84 @@
+.btn {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: transform 0.08s, opacity 0.15s, background-color 0.2s;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.btn:focus {
+  outline: 2px solid #FFC72C;
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ─── Button Variants ─────────────────────────────────────────────────────── */
+.btn-normal {
+  background: #374151;
+  color: #f5f5f5;
+}
+
+.btn-normal:hover:not(:disabled) {
+  background: #4b5563;
+}
+
+.btn-vip {
+  background: #FFC72C;
+  color: #111;
+}
+
+.btn-vip:hover:not(:disabled) {
+  background: #ffd444;
+}
+
+.btn-add {
+  background: #166534;
+  color: #d1fae5;
+}
+
+.btn-add:hover:not(:disabled) {
+  background: #15803d;
+}
+
+.btn-remove {
+  background: #7f1d1d;
+  color: #fee2e2;
+}
+
+.btn-remove:hover:not(:disabled) {
+  background: #991b1b;
+}
+
+/* Mobile touch improvements */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 12px 14px;
+    font-size: 12px;
+    min-height: 48px;
+  }
+}
